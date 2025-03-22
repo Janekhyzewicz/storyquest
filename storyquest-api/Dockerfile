@@ -4,6 +4,9 @@ WORKDIR /app
 
 COPY . .
 
+# Make gradlew executable
+RUN chmod +x ./gradlew
+
 RUN ./gradlew build -x test
 
 EXPOSE 8080
