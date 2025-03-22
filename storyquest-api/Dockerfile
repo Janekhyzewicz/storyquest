@@ -9,7 +9,7 @@ RUN chmod +x ./storyquest-api/gradlew
 
 # Run gradlew from the correct directory
 WORKDIR /app/storyquest-api
-RUN ./storyquest-api/gradlew build -x test
+RUN ./gradlew build -x test
 
 EXPOSE 8080
 
