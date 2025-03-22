@@ -2,12 +2,16 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
+# Install Gradle
+RUN apt-get update && apt-get install -y wget unzip
+RUN wget https://services.gradle.org/distributions/gradle-7.6-bin.zip -P /tmp
+RUN unzip -d /opt/gradle /tmp/gradle-7.6-bin.zip
+ENV GRADLE_HOME=/opt/gradle/gradle-7.6
+ENV PATH=${GRADLE_HOME}/bin:${PATH}
+
 COPY . .
 
-# Make gradlew executable
-RUN chmod +x ./gradlew
-
-RUN ./gradlew build -x test
+RUN gradle build -x test
 
 EXPOSE 8080
 
