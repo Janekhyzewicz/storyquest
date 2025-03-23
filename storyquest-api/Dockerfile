@@ -15,3 +15,5 @@ EXPOSE 10000
 
 # Make sure to use the correct path to the JAR file
 CMD ["java", "-jar", "build/libs/storyquest-api-0.0.1-SNAPSHOT.jar"]
+
+ENTRYPOINT ["java", "-Xms128m", "-Xmx256m", "-jar", "build/libs/storyquest-api-0.0.1-SNAPSHOT.jar"]
