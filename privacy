@@ -1,0 +1,17 @@
+The data your app stores, and which of these is "personally identifiable information"?
+Data stores login and password of the users. We do not collect these informations, they are stored directly in the phone.
+    
+The data your app transmits to your servers.
+No data are collected: we do not have servers for data collection.
+
+How the above data is used.
+Data are only used to keep in memory the progression of individual players.
+
+Whether it is possible to request deletion of this data.
+User can delete data in their phones.
+
+The permissions that your app use, especially if you use any sensitive permissions like READ_EXTERNAL_STORAGE.
+App do not use specific permission.
+
+How you want to be contacted in case someone wishes to ask for clarification/deletion of data/report security vulnerability.
+You can contact me for any clarification at janek.hyzewicz@univ-evry.fr
